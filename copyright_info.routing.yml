@@ -1,0 +1,7 @@
+copyright_info.settings_form:
+  path: '/admin/config/copyright-info'
+  defaults:
+    _form: Drupal\copyright_info\Form\CopyrightConfigurationForm
+    _title: 'Copyright Info configuration'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,10 @@
+services:
+  copyright_info.salutation:
+    class: Drupal\copyright_info\CopyrightInfoSalutation
+    arguments: ['@config.factory', '@event_dispatcher', '@page_cache_kill_switch']
+
+  copyright_info.redirect_subscriber:
+    class: Drupal\copyright_info\EventSubscriber\CopyrightInfoRedirectSubscriber
+    arguments: ['@current_user', '@current_route_match']
+    tags:
+      - { name: event_subscriber }

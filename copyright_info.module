@@ -1,0 +1,31 @@
+<?php
+
+/**
+* @file
+* copyright_info module file.
+*/
+
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+* Implements hook_help().
+*/
+function copyright_info_help($route_name, RouteMatchInterface $route_match)
+{
+	switch ($route_name) {
+		case 'help.page.copyright_info':
+			$output = '';
+			$output .= '<h3>' . t('About') . '</h3>';
+			$output .= '<p>' . t('This is the Copyright Info module.') . '</p>';
+			$output .= '<p>' . t('Use the structure/block page to add default Copyright Info to your bottom block or footer. Click "Place Block", select Copyright Info, then save the configuration.') . '</p>';
+			$output .= '<p>' . t('To change your copyright text information click the Configure button from the module page.') . '</p>';
+			$output .= '<p>' . t('To return to the default copyright info message, leave the configure form blank and submit.') . '</p>';
+			$output .= '<p>' . t('To add styles to the text, use class .copyrightinfo') . '</p>';
+			return $output;
+
+		default:
+	}
+}
+
+
