@@ -37,6 +37,6 @@ This module requires no modules outside of Drupal core.
 - The fully qualified doman name (FQDN) and the year are default.
 - You can change the default message by clicking Configure on the module admin page.
 - A class is provided for styling: .copyrightinfo
-- Configuration input accepts up to 125 characters, HTML is permitted.
+- Configuration input accepts up to 450 characters, HTML is permitted.
 - Clear the Drupal site cache to ensure copyright info is visible.
 

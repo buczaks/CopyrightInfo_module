@@ -31,10 +31,11 @@ class CopyrightConfigurationForm extends ConfigFormBase {
     $config = $this->config('copyright_info.custom_salutation');
 
     $form['salutation'] = [
-      '#type' => 'textfield',
+      '#type' => 'textarea',
       '#title' => $this->t('Copyright info block text'),
 	  '#description' => $this->t('Please provide the text you want to use.<br>Leave blank and save to return to the default copyright info text.<br>You may have to clear the cache to show new block text on page after you save this configuration.'),
       '#default_value' => $config->get('salutation'),
+	  '#maxlength' => 451,
     ];
 
     return parent::buildForm($form, $form_state);
@@ -58,8 +59,8 @@ class CopyrightConfigurationForm extends ConfigFormBase {
   public function validateForm(array &$form, FormStateInterface
   $form_state) {
   $salutation = $form_state->getValue('salutation');
-  if (strlen($salutation) > 125) {
-  $form_state->setErrorByName('salutation', $this->t('Text needs to be 125 characters or less. '));
+  if (strlen($salutation) > 450) {
+  $form_state->setErrorByName('salutation', $this->t('Text needs to be 450 characters or less. '));
   }
   }
 
