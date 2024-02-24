@@ -1,5 +1,5 @@
 # CopyrightInfo_module
-For Drupal 10. Adds a typical copyright footer line and a GUI for content mangers to easily change the text.
+For Drupal 10. Adds a typical copyright footer line and a GUI for content managers to easily change the text.
 
 ## CONTENTS OF THIS FILE
 
@@ -20,9 +20,6 @@ For Drupal 10. Adds a typical copyright footer line and a GUI for content manger
 ## REQUIREMENTS
 
 This module requires no modules outside of Drupal core.
-
-## RECOMMENDED MODULES
-
 
 ## INSTALLATION
 
