@@ -5,7 +5,6 @@ For Drupal 10. Adds a typical copyright footer line and a GUI for content manage
 
 - Introduction
 - Requirements
-- Recommended Modules
 - Installation
 - Configuration
 
